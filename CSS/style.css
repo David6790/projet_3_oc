@@ -184,7 +184,7 @@ form{
 }
 
 /* definit le style lors du hover des élements de filtre */
-.element:hover{
+.element_filtre:hover{
 
     background-color: var(--second-color);
 }
@@ -204,14 +204,99 @@ form{
 /* definit la propriété flex du conteneur qui contient les deux coupples d'element filtre*/
 .partie_filtre{
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 /* definit disposition flex de toute la section filtre */
 .filtre{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
+
+.info i{
+    color: var(--main-color);
+}
+
+/***************************** Section hébergement ******************************************/
+
+
+/*definit l'arrière plan, les propriété flexbox et le style du conteneur hébergement marseille*/
+.hebergement_marseille{
+    background-color: var(--light-grey-color);
+    height: 626px;
+    width: 880px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+   
+}
+/* definit la position des titre et du afficher plus en fin de div */
+.hebergement_marseille h1, h3{
+    margin-left: 40px;
+    margin-top: 10px;
+    
+    
+    
+}
+
+/* definit le style des cards présents dans la div. les border radius, les ombres et l'alignement images /textes  */
+.card{
+    width: 246px;
+    height: 199px;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* definit le comportement et les dimensions des images dans les cards notament la manière dont elles fit dans la card */
+.card img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* defini le style des etoiles de chez FontAwsome */
+.nom_prix_note i{
+    color: var(--main-color);
+    padding-top: 10px;
+    line-height: 2px;  
+}
+/* definit la hauteur de ligne des texte dans les cards pour qu'ils rentrent bien dans les cards*/
+.nom_prix_note{
+    line-height: 21px;
+    padding-left: 10px;
+}
+
+/* defini les propriété flexbox de la ligne 1 */
+.ligne_1{
+    display: flex;
+    justify-content:space-evenly;
+    
+    
+}
+
+/*defini les propriété flexbox de la ligne 2*/
+.ligne_2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*retire les effets de style (soulignement, couleur violette des liens) sur nos cards qui sont des liens*/
+.hebergement_marseille a{
+    text-decoration: none;
+    color: black;
+}
+
