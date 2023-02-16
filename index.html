@@ -12,8 +12,8 @@
         
     </head>
     <body>
-        <div class="container">
-            <header>
+        <div class="container"><!--container qui définit la dimension de la page-->
+            <header><!--section en-tête-->
                 <div class="logo">
                     <a href="#"><img src="images/logo/Booki.png" alt="booki"></a>
                  </div>
@@ -23,18 +23,15 @@
                         <li><a href="#">Activités</a></li>
                     </ul>
 
-                </nav> 
-              
+                </nav>   
             </header>
-            <section class="recherche">
-                <div class="fonction-recherche">
-                    <div class="titre-recherche">
+            <section class="recherche"><!--section barre de recherche-->
+                <div class="titre-recherche"> <!--Titre et sous titre de la section recherche-->
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre-ville ou en pleine nature</p>
-                    </div>
                 </div>
-                <div class="barre_de_recherche">
-                    <form method="post" action="">
+                <div class="barre_de_recherche"><!--Div qui englobe le formulaire de recherche-->
+                    <form method="post" action=""><!--formulaire de recherche-->
                         <div class="logo_geo">
                             <label for="localisation"><i><i class="fa-solid fa-location-dot"></i></i></label>
                         </div>
@@ -44,13 +41,38 @@
                         <div class="boutton_recherche">
                             <input type="submit" value="Rechercher">    
                         </div>
-                        <div>
+                        <div><!--boutton caché à activer en version mobile-->
                             <button type="submit" class="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>          
+                 </div>          
                     </form>
-
                 </div>    
-
+            </section>
+            <section class="filtre"><!--section filtre-->
+                <h1>Filtres</h1>
+                <Div class="partie_filtre">
+                    <div class="eco_famille"><!--Element filtre regroupé par couple pour anticipé l'intégration mobile-->
+                        <div class="element_filtre">
+                           <div><h1><i class="fa-solid fa-money-bill-wave"></i></Div>
+                            <div><h1>Économique</h1></div> 
+                        </div>
+                        <div class="element_filtre">
+                            <div><h1><i class="fa-solid fa-person"></i></h1></div>
+                            <div><h1>Familial</h1></h1></div> 
+                        </div>
+                    </div>
+                    <div class="romantique_animaux">
+                        <div class="element_filtre">
+                            <div><h1><i class="fa-solid fa-heart"></i></h1></div>
+                            <div><h1>Romantique</h1></h1></div> 
+                        </div>
+                        <div class="element_filtre">
+                            <div><h1><i class="fa-solid fa-dog"></i></h1></div>
+                            <div><h1>Animaux autorisés</h1></h1></div> 
+                        </div>
+                    </div>
+                </div>
+               
+                
             </section>
 
         </div>

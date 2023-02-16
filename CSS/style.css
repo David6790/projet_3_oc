@@ -1,4 +1,4 @@
-/********* Généralités *************/
+/******************************************* Généralités *******************************************************/
 
 
 /* defini d'avance l'ensemble des couleurs qui seront utilisées lors du developemment du site */
@@ -33,7 +33,7 @@ body{
 
 
 
-/**************  Header   **********************/
+/***************************************  Header   *******************************************************/
 
 /* Tout de suite definir les dimensions du logo*/
 .logo img{
@@ -76,7 +76,7 @@ header{
 }
 
 
-/*************** Section Fonction de recherche ***************/
+/****************************************** Section recherche *****************************************/
 
 .titre-recherche h1{
     margin-bottom: 5px;
@@ -86,8 +86,9 @@ header{
     margin-top: 5px;
 }
 
-/************************* barre de recherche **********************/
 
+
+/*définit le style du bouton submit*/
 .boutton_recherche input[type="submit"]{
     color: white;
     font-size: large;
@@ -99,7 +100,7 @@ header{
     border-style: none;
     
 }
-
+/* definit le style de la zone de texte ou on rentre la recherche */
 .search input[type="search"]{
    line-height: 48px;
    width: 270px;
@@ -110,13 +111,13 @@ header{
    border-style: none;
     
 }
-
-input ::placeholder{
+/*définit le style du placeholder*/
+::placeholder{
     font-size: large;
     color: black;
 }
 
-
+/* definit le style du logo FontAwsome qui sert de labal au formulaire */
 .logo_geo{
     display: flex;
     font-size: larger;
@@ -128,6 +129,8 @@ input ::placeholder{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
+/* definit le style du logo loupe de FontAwsome qui sert de submit en version mobile. Pour l'instant caché */
 .loupe{
     background-color: var(--main-color);
     color: white;
@@ -140,9 +143,12 @@ input ::placeholder{
     display: none;
 }
 
+/* permet d'enlever la bordure extérieure du input search lorsqu'on clique dessus */
 .search input:focus{
    outline: none;
 }
+
+/* definit la disposition en mode flex horizontal du formulaire  */
 form{
     display: flex;
     height: 42px;
@@ -150,7 +156,62 @@ form{
     width:fit-content;     
 }
 
+/* definit la disposition en mode flex vertical de toute la zone de recherche à savoir titre, sous titre puis barre de recherche */
 .recherche{
     display: flex;
     flex-direction: column;
+}
+
+/********************************************************* section filtre *******************************************/
+
+/* définit le style des 4 élements de filtre */
+.element_filtre{
+    display: flex;
+    border: solid var(--light-grey-color) 2px;
+    width: fit-content;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 25px;
+    gap: 20px;
+   
+}
+
+/*définit le style des logo FonAwsome dans les élements de filtre*/
+.element_filtre i{
+    color: var(--main-color);
+}
+
+/* definit le style lors du hover des élements de filtre */
+.element:hover{
+
+    background-color: var(--second-color);
+}
+
+/* definit propriété flex par couple d'élément pour anticiper l'intégration mobile */
+.eco_famille{
+    display: flex;
+    gap: 20px;
+       
+}
+/* definit propriété flex par couple d'élément pour anticiper l'intégration mobile */
+.romantique_animaux{
+    display: flex;
+    gap: 20px;
+    
+}
+/* definit la propriété flex du conteneur qui contient les deux coupples d'element filtre*/
+.partie_filtre{
+    display: flex;
+    gap: 20px;
+}
+
+/* definit disposition flex de toute la section filtre */
+.filtre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
 }
