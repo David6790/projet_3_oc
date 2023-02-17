@@ -237,39 +237,43 @@ form{
 /***************************** Section hébergement ******************************************/
 
 
-/*definit l'arrière plan, les propriété flexbox et le style du conteneur gauche hébergement marseille*/
+/*definit l'arrière plan, les propriété flexbox et le style du conteneur général gauche hébergement marseille*/
 
 .container_hebergement_gauche{
     background-color: var(--light-grey-color);
     height: 626px;
     width: 880px;
     border-radius: 20px;
-    padding-left: 40px;
-    padding-right: 40px;   
+    padding: 10px 40px 30px 40px;
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
-.hebergement_marseille{
+/* defini le conteneur contenant les deux lignes de cards*/
+.container_cards_gauche{
    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
     margin-bottom: 30px;      
 }
-/* definit la position des titre et du afficher plus en fin de div */
 
-.container_hebergement_gauche h1{
-    margin-bottom: 23px;
-    padding-top: 40px;
-}
-.afficher_plus{
+/* defini le style du lien afficher_plus*/
+.afficher_plus a{
     font-size: 18px;
-    font-weight: 700;   
+    font-weight: 700; 
+    text-decoration: none;
+    color: black;   
 }
 
 /* definit le style des cards présents dans la div. les border radius, les ombres et l'alignement images /textes  */
 .card{
     width: 246px;
-    height: 199px;
+    height: 100%;
     padding: 7px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
@@ -277,6 +281,7 @@ form{
     flex-direction: column;
     border-radius: 20px;
     background-color: white;
+    box-sizing: border-box;
 }
 
 /* definit le comportement et les dimensions des images dans les cards notament la manière dont elles fit dans la card */
@@ -286,26 +291,32 @@ form{
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    
 }
 
 /* defini le style des etoiles de chez FontAwsome */
 .nom_prix_note i{
     color: var(--main-color);
-    font-size: smaller;
-        
+    font-size: smaller;       
 }
+/*definit le style du titre dans les cards*/ 
 .nom_hotel{
     font-size: 16px;
     font-weight: 700;
+    
 }
 /* definit la hauteur de ligne des texte dans les cards pour qu'ils rentrent bien dans les cards*/
 .nom_prix_note{
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    justify-content: space-between;
+    gap: 10px;
     padding-top: 9px;
     padding-left: 10px;
     font-size: 14px;
+    padding-bottom: 5px;
+    
+    
 }
 
 /* defini les propriété flexbox de la ligne 1 */
@@ -313,7 +324,7 @@ form{
     display: flex;
     justify-content:space-between;
     
-  
+    
 }
 
 /*defini les propriété flexbox de la ligne 2*/
@@ -323,7 +334,88 @@ form{
 }
 
 /*retire les effets de style (soulignement, couleur violette des liens) sur nos cards qui sont des liens*/
-.hebergement_marseille a{
+.container_cards_gauche a{
     text-decoration: none;
     color: black;
+}
+
+/***********************************Les plus populaires**************************/
+
+/****container général de la grande div de droite*/
+.container_populaires_droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--light-grey-color);
+    height: 626px;
+    width: 420px;
+    border-radius: 20px;
+    padding: 10px 40px 30px 40px;
+    box-sizing: border-box;  
+}
+/*container des 3 cards de la div de droite*/
+.container_cards_droite{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;   
+}
+
+/*cdefinit le style des cards de droite*/
+.card_2{
+    width: 346px;
+    height: 144px;
+    padding: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+
+}
+/*definit le style de l'image dans les cards de droite*/
+.card_2 img{
+    width: 137px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 20px;   
+}
+
+/*definit le le style des texte dans les cards*/
+.nom_prix_note_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 9px;
+    padding-left: 10px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+/*definit le style des titre dans les cards de droite*/
+.nom_hotel_2{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+/* definit le style des etoiles de chez FontAwsome dans les cards de droite*/
+.nom_prix_note_2 i{
+    color: var(--main-color);
+}
+
+/*supprime les style souligné et couleur violette des liens */
+.container_cards_droite a{
+    text-decoration: none;
+    color: black;
+}
+
+/*definit la propriété flex de la grand section qui comprends le container gauche et droite*/
+.hebergement{
+    display: flex;
+    justify-content: space-between;
 }
