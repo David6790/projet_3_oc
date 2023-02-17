@@ -281,21 +281,24 @@ form{
 /* defini le style des etoiles de chez FontAwsome */
 .nom_prix_note i{
     color: var(--main-color);
-    padding-top: 10px;
-    line-height: 2px;  
+    font-size: smaller;
+        
 }
 /* definit la hauteur de ligne des texte dans les cards pour qu'ils rentrent bien dans les cards*/
 .nom_prix_note{
-    line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 9px;
     padding-left: 10px;
+    font-size: 14px;
 }
 
 /* defini les propriété flexbox de la ligne 1 */
 .ligne_1{
     display: flex;
     justify-content:space-evenly;
-    
-    
+     
 }
 
 /*defini les propriété flexbox de la ligne 2*/
