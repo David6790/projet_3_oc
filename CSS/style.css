@@ -237,26 +237,33 @@ form{
 /***************************** Section hébergement ******************************************/
 
 
-/*definit l'arrière plan, les propriété flexbox et le style du conteneur hébergement marseille*/
-.hebergement_marseille{
+/*definit l'arrière plan, les propriété flexbox et le style du conteneur gauche hébergement marseille*/
+
+.container_hebergement_gauche{
     background-color: var(--light-grey-color);
     height: 626px;
     width: 880px;
     border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;   
+}
+.hebergement_marseille{
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    
-   
+    gap: 30px;
+    margin-bottom: 30px;      
 }
 /* definit la position des titre et du afficher plus en fin de div */
-.hebergement_marseille h1, h3{
-    margin-left: 40px;
-    margin-top: 10px;
-    
-    
-    
+
+.container_hebergement_gauche h1{
+    margin-bottom: 23px;
+    padding-top: 40px;
+}
+.afficher_plus{
+    font-size: 18px;
+    font-weight: 700;   
 }
 
 /* definit le style des cards présents dans la div. les border radius, les ombres et l'alignement images /textes  */
@@ -304,14 +311,15 @@ form{
 /* defini les propriété flexbox de la ligne 1 */
 .ligne_1{
     display: flex;
-    justify-content:space-evenly;
-     
+    justify-content:space-between;
+    
+  
 }
 
 /*defini les propriété flexbox de la ligne 2*/
 .ligne_2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 /*retire les effets de style (soulignement, couleur violette des liens) sur nos cards qui sont des liens*/
