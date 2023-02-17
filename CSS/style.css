@@ -230,6 +230,9 @@ form{
 .info i{
     color: var(--main-color);
 }
+.info p{
+    font-size: 16px;
+}
 
 /***************************** Section hébergement ******************************************/
 
@@ -283,6 +286,10 @@ form{
     color: var(--main-color);
     font-size: smaller;
         
+}
+.nom_hotel{
+    font-size: 16px;
+    font-weight: 700;
 }
 /* definit la hauteur de ligne des texte dans les cards pour qu'ils rentrent bien dans les cards*/
 .nom_prix_note{
