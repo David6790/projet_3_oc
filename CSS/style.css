@@ -164,23 +164,31 @@ form{
 
 /********************************************************* section filtre *******************************************/
 
+.titre_filtre{
+    font-size: 17px;
+    font-weight: 700;
+}
+
 /* définit le style des 4 élements de filtre */
 .element_filtre{
-    display: flex;
-    border: solid var(--light-grey-color) 2px;
-    width: fit-content;
-    height: 50px;
-    text-align: center;
-    align-items: center;
-    padding: 0 15px;
-    border-radius: 25px;
-    gap: 20px;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 50px;
+  width: fit-content;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  border: solid 1px var(--light-grey-color); 
+  border-radius: 25px;
+  
 }
 
 /*définit le style des logo FonAwsome dans les élements de filtre*/
 .element_filtre i{
     color: var(--main-color);
+    
 }
 
 /* definit le style lors du hover des élements de filtre */
@@ -204,9 +212,11 @@ form{
 /* definit la propriété flex du conteneur qui contient les deux coupples d'element filtre*/
 .partie_filtre{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
+
 
 /* definit disposition flex de toute la section filtre */
 .filtre{
@@ -299,4 +309,3 @@ form{
     text-decoration: none;
     color: black;
 }
-
