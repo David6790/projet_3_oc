@@ -259,7 +259,8 @@ form{
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    margin-bottom: 30px;      
+    margin-bottom: 30px; 
+     
 }
 
 /* defini le style du lien afficher_plus*/
@@ -418,4 +419,73 @@ form{
 .hebergement{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
+
+/******************************* section activité à marsielle ***************************/
+
+.card_activite{
+    width: 302px;
+    height: 445px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.card_activite img{
+    width: 100%;
+    height: 389px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+    
+}
+
+.nom_activite{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 19px;
+    padding-top: 20px;
+}
+
+.container_activites{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 61px;
+}
+
+.container_activites a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/************************footer***********************************/
+.container_footer{
+    display: flex;
+    gap: 180px;
+    align-items: center;
+    height: 225px;
+    width: 1339px;
+    background-color: var(--light-grey-color);
+    margin: auto;
+    
+}
+.liste_footer ul li{
+    list-style: none;
+    padding: 0px 0px 12px 0px;
+
+}
+
+.liste_footer a{
+    text-decoration: none;
+    color: black;
+}
+
