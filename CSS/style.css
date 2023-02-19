@@ -9,15 +9,19 @@
 
     
 }
-
+body {
+	display: flex;
+	justify-content: space-between;
+    margin: 0px;
+}
 
 /* definir la largeur maximale de la page, la couleur de fond et centrer la page dans le navigateur et rajouter un padding de 40px*/
 .container{ 
     background-color: white;
     max-width: 1400px;
-    margin:auto;
     padding-left: 40px;
     padding-right: 40px;
+    
    
 }
 
@@ -242,7 +246,7 @@ form{
 .container_hebergement_gauche{
     background-color: var(--light-grey-color);
     height: 626px;
-    width: 880px;
+    width: 65%;
     border-radius: 20px;
     padding: 10px 40px 30px 40px;
     box-sizing: border-box; 
@@ -349,7 +353,7 @@ form{
     justify-content: space-evenly;
     background-color: var(--light-grey-color);
     height: 626px;
-    width: 420px;
+    width: 32%;
     border-radius: 20px;
     padding: 10px 40px 30px 40px;
     box-sizing: border-box;  
@@ -455,8 +459,8 @@ form{
 
 .container_activites{
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    
+    justify-content:space-between;
     padding-top: 20px;
     margin-bottom: 61px;
 }
@@ -465,6 +469,7 @@ form{
     text-decoration: none;
     color: black;
 }
+
 
 
 /************************footer***********************************/
