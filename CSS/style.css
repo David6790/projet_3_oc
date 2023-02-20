@@ -21,7 +21,7 @@ body {
     max-width: 1400px;
     padding-left: 40px;
     padding-right: 40px;
-    
+    margin: auto;
    
 }
 
@@ -29,10 +29,6 @@ body {
 /* De manière générale implementer cette police dans la page*/
 *{
     font-family: 'raleway', sans-serif; 
-}
-
-body{
-    margin: 0;
 }
 
 
@@ -328,6 +324,7 @@ form{
 .ligne_1{
     display: flex;
     justify-content:space-between;
+    width: 100%;
     
     
 }
@@ -336,6 +333,7 @@ form{
 .ligne_2{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 /*retire les effets de style (soulignement, couleur violette des liens) sur nos cards qui sont des liens*/
@@ -459,8 +457,9 @@ form{
 
 .container_activites{
     display: flex;
-    
+    width: 100%;
     justify-content:space-between;
+    gap: 43px;
     padding-top: 20px;
     margin-bottom: 61px;
 }
@@ -476,11 +475,15 @@ form{
 .container_footer{
     display: flex;
     gap: 180px;
-    align-items: center;
+    align-items:flex-start;
     height: 225px;
-    width: 1339px;
+    width: 100%;
     background-color: var(--light-grey-color);
-    margin: auto;
+    
+    
+}
+.liste_footer{
+    width: fit-content;
     
 }
 .liste_footer ul li{
@@ -494,3 +497,103 @@ form{
     color: black;
 }
 
+/*****************************************media querie tablette****************************/
+
+@media screen and (max-width: 992px) {
+   
+    body {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+    }
+    
+    .container{ 
+        background-color: white;
+        max-width: 992px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: auto;
+       
+    }
+
+    .element_filtre{
+        padding: 0 20px;
+    }
+    
+    .hebergement{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 53px;
+        margin-bottom: 70px;
+    }
+
+    .container_cards_droite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        height: 100%;   
+     }
+    .container_populaires_droite{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+    .container_hebergement_gauche{
+        width: 100%;
+        
+    }
+
+    .ligne_1{
+        justify-content: space-between;
+
+    }
+    .ligne_2{
+        justify-content: space-between;
+    }
+
+    .card_2{
+        width: 252px;
+        height: 154px;
+        
+    }
+    .card_2 img{
+        width: 106px;
+        height: 100%;
+    }
+    .nom_prix_note_2{
+        font-size: 14px;
+        padding-top: 9px;
+        padding-left: 0px;
+    }
+
+    
+    .card_activite{
+        width: 182px;
+        height: 267px;
+        
+    }
+    .card_activite img{
+        height: 211px;
+        width: 100%;
+    }
+    .container_activites{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        
+    }
+    .container_footer{
+        width: 100%;
+
+        gap: 50px;
+    }
+
+    }
+
+    /*****************************************media querie smartphone****************************/
+
+    
