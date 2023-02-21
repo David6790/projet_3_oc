@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booki | Acceuil </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,16 +23,15 @@
                         <li><a href="#">Hébergement</a></li>
                         <li><a href="#">Activités</a></li>
                     </ul>
-
                 </nav>   
             </header>
             <section class="recherche"><!--section barre de recherche-->
                 <div class="titre-recherche"> <!--Titre et sous titre de la section recherche-->
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="barre_de_recherche"><!--Div qui englobe le formulaire de recherche-->
-                    <form method="post" action=""><!--formulaire de recherche-->
+                    <form method="post"><!--formulaire de recherche-->
                         <div class="logo_geo">
                             <label for="localisation"><i><i class="fa-solid fa-location-dot"></i></i></label>
                         </div>
@@ -52,7 +52,7 @@
             <section class="filtre"><!--section filtre-->
                 
                 <Div class="partie_filtre">
-                    <div class="titre_filtre">Filtres</div>
+                    <div><h2>Filtres</h2></div>
                     <div class="eco_famille"><!--Element filtre regroupé par couple pour anticipé l'intégration mobile-->
                         <div class="element_filtre">
                            <div><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
@@ -84,8 +84,8 @@
 
             <section class="hebergement"><!--section qui englobera les deux conteneurs de carte "hebergement à marseille et "les plus populaires"-->
                 <div class="container_hebergement_gauche"> 
-                    <h1>Hébergement à Marseille</h1>
-                    <div></div>
+                    <h2>Hébergement à Marseille</h2>
+                    
                     <div class="container_cards_gauche"><!--div qui contiendra les div ligne 1 et ligne 2 pour coder en flex column-->
                         
                         <div class="ligne_1"><!--div qui englobe les 3 cards de la premiere ligne qu'on codera en flex row-->
@@ -197,7 +197,7 @@
 
 
                 <div class="container_populaires_droite"><!--container général des cards et titre de la partie droite-->
-                    <h1>Les plus populaires</h1>
+                    <h2>Les plus populaires</h2>
                     <div class="container_cards_droite"><!--container des 3 cards de la partie droite-->
                         <a href="#">
                             <div class="card_2">
@@ -257,7 +257,7 @@
                 </div>                
             </section>
             <section class="activites_a_marseille">
-                <h1>Activités à Marseillle</h1>
+                <h2>Activités à Marseillle</h2>
                 <div class="container_activites">
                     <a href="#">
                         <div class="card_activite">
@@ -288,29 +288,33 @@
             <footer>
                 <div class="container_footer">
                     
-                        <div class="liste_footer">    
-                            <ul>
-                                <h1 class="titre_filtre">A propos</h1>
-                                <a href="#"><li>Fonctionnement du site</li></a>
-                                <a href="#"><li>Conditions Générales</li></a>
-                                <a href="#"><li>Données et confidentialités</li></a>
-                            </ul>
+                        <div class="liste_footer"> 
+                            <div><h1 class="titre_filtre">A propos</h1></div> 
+                            <div>
+                                <ul>
+                               
+                                    <li><a href="#">Fonctionnement du site</a> </li>
+                                    <li><a href="#">Conditions Générales</a></li>
+                                    <li><a href="#">Données et confidentialités</a></li>
+                                </ul>
+                            </div>
 
                         </div>
                    
                         <div class="liste_footer">    
+                            <div><h1 class="titre_filtre">Nos hébergements</h1></div>
                             <ul>
-                                <h1 class="titre_filtre">Nos hébergements</h1>
-                                <a href="#"><li>Charte qualité</li></a>
-                                <a href="#"><li>Proposer votre hôtel</li></a>
+                                
+                                <li><a href="#">Charte qualité</a></li>
+                                <li><a href="#">Proposer votre hôtel</a></li>
                             </ul>
 
                         </div>
-                        <div class="liste_footer">    
+                        <div class="liste_footer">  
+                            <div><h1 class="titre_filtre">Assistance</h1> </div> 
                             <ul>
-                                <h1 class="titre_filtre">Assistance</h1>
-                                <a href="#"><li>Centre d'aide</li></a>
-                                <a href="#"><li>Nous contacter</li></a>
+                                <li><a href="#">Centre d'aide</a></li>
+                                <li><a href="#">Nous contacter</a></li>
                             </ul>
 
                         </div>
