@@ -51,7 +51,6 @@ body {
     justify-content: flex-end;
     gap: 20px;
     align-items: center;
-    
     height: 80px;
    
 }
@@ -605,4 +604,134 @@ form{
 
     /*****************************************media querie smartphone****************************/
 
-    
+    @media screen and (max-width: 767px){
+        body {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+        }
+        
+        .container{ 
+            background-color: white;
+            max-width: 768px;
+            padding-left: 19px;
+            padding-right: 19px;
+            margin: auto;
+        }
+/*************header *************/
+        .nav{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 0px;
+            
+        }
+        .logo{
+            width: 100%;
+            justify-content: center;
+        }
+
+        .menu{
+            width: 100%;
+            justify-content: space-evenly;
+            
+            gap: 0px;
+        }
+        .lien{
+            width: 50%;
+            border-top: none;
+            border-bottom: solid 1px transparent ;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            
+        }
+
+        .lien:hover{
+            border-bottom: solid 1px var(--main-color);
+            border-top: none;
+        }
+        
+/******************************barre de recherche***************************/
+        .titre-recherche{
+            width: 100%;
+            
+        }
+
+/********filtres********/
+
+        .partie_filtre{
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .eco_famille{  
+         width: 100%;
+        }
+        .romantique_animaux{
+            width: 100%;
+        }
+
+        .element_filtre{
+            justify-content: flex-start;
+            width: 50%;
+        
+        }
+ /******************** hebergement ***************************/
+        .hebergement{
+            flex-direction: column-reverse;
+        } 
+        
+        .container_cards_droite{
+            flex-direction: column;
+        
+            height: 580px;
+        }
+        .card_2{
+            width: 100%;
+        }
+
+        .card_2 img{
+            width: 30%;
+        }
+
+        .ligne_1{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .ligne_2{
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .container_hebergement_gauche{
+            height: 100%;
+            background-color: transparent;
+           
+        }
+
+        .container_cards_gauche{
+            gap: 20px;
+        }
+
+        .card{
+            width: 100%;
+        }
+
+        /****************activité marseille **************************/
+
+        .container_activites{
+            flex-direction: column;
+            gap: 60px;
+        }
+        .card_activite{
+            width: 100%;
+        }
+
+        /**************** footer ********************/
+
+        .container_footer{
+            flex-direction: column;
+            height: 100%;
+        }
+
+    }
