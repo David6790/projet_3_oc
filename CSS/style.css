@@ -5,9 +5,7 @@
 :root{
     --main-color: #0065fc;
     --second-color:#deebff;
-    --light-grey-color:#f2f2f2;
-
-    
+    --light-grey-color:#f2f2f2;   
 }
 body {
 	display: flex;
@@ -21,10 +19,8 @@ body {
     max-width: 1400px;
     padding-left: 40px;
     padding-right: 40px;
-    margin: auto;
-   
+    margin: auto;   
 }
-
 
 /* De manière générale implementer cette police dans la page*/
 *{
@@ -42,9 +38,6 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
     height: 80px;
-    
-    
-
 }
 
 .logo img{
@@ -87,10 +80,6 @@ body {
 .lien:hover{
     border-top: solid 1px var(--main-color);
 }
-
-
-
-
 
 /****************************************** Section recherche *****************************************/
 
@@ -501,6 +490,10 @@ form{
 .liste_footer{
     width: fit-content;
     
+}
+
+.liste_footer h1{
+    padding-left: 40px;
 }
 .liste_footer ul li{
     list-style: none;
