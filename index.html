@@ -30,13 +30,15 @@
                         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div class="barre_de_recherche"><!--Div qui englobe le formulaire de recherche-->
+                
                     <form method="post"><!--formulaire de recherche-->
                         <div class="logo_geo">
                             <label for="localisation"><i><i class="fa-solid fa-location-dot"></i></i></label>
                         </div>
                         <div class="search">
-                            <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">
+                            <div class="input_1">
+                                <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">
+                            </div>
                         </div>
                         <div class="boutton_recherche">
                             <input type="submit" value="Rechercher">    
@@ -47,7 +49,7 @@
                                 
                     </form>
                     
-                </div>    
+                  
             </section>
             <section class="filtre"><!--section filtre-->
                 
@@ -76,8 +78,7 @@
                 </div>
                 <div class="info">
                     <p><i class="fa-solid fa-circle-info"></i>&emsp; Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-                    
+                </div>      
             </section>
 
             <section class="hebergement"><!--section qui englobera les deux conteneurs de carte "hebergement à marseille et "les plus populaires"-->
@@ -85,7 +86,6 @@
                     <h2>Hébergement à Marseille</h2>
                     
                     <div class="container_cards_gauche"><!--div qui contiendra les div ligne 1 et ligne 2 pour coder en flex column-->
-                        
                         <div class="ligne_1"><!--div qui englobe les 3 cards de la premiere ligne qu'on codera en flex row-->
                             <a href="#" target="_blank"><!--balise a pour rendre la carte cliquable dans son intégralité-->
                                 <div class="card">
@@ -192,11 +192,13 @@
                     </div>
                     <div class="afficher_plus"><a href="#">Afficher plus</a> </div>
                 </article>
-                   
-                    
 
                 <article class="container_populaires_droite">
-                    <h2>Les plus populaires</h2>
+                    <div class="titre_populaire">
+                        <div><h2>Les plus populaires</h2></div>
+                        <div><i class="fa-solid fa-chart-line"></i></div>
+
+                    </div>
                     <div class="container_cards_droite"><!--container des 3 cards de la partie droite-->
                         <a href="#">
                             <div class="card_2">
@@ -317,9 +319,6 @@
                             </ul>
 
                         </div>
-
-                    
-
                 </div>
             </footer>
         </div>

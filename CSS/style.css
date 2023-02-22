@@ -1,7 +1,5 @@
 /******************************************* Généralités *******************************************************/
 
-
-/* defini d'avance l'ensemble des couleurs qui seront utilisées lors du developemment du site */
 :root{
     --main-color: #0065fc;
     --second-color:#deebff;
@@ -12,6 +10,20 @@ body {
 	justify-content: space-between;
     margin: 0px;
 }
+
+i{
+    color: var(--main-color);
+}
+
+a{
+    text-decoration: none; 
+    color: black;   
+}
+
+p{
+    font-size: 16px;
+}
+
 
 /* definir la largeur maximale de la page, la couleur de fond et centrer la page dans le navigateur et rajouter un padding de 40px*/
 .container{ 
@@ -27,12 +39,9 @@ body {
     font-family: 'raleway', sans-serif; 
 }
 
-
-
 /***************************************  Header   *******************************************************/
 
-.logo{
-    
+.logo{   
     display: flex;
     width: 50%;
     justify-content: flex-start;
@@ -51,8 +60,7 @@ body {
     justify-content: flex-end;
     gap: 20px;
     align-items: center;
-    height: 80px;
-   
+    height: 80px;   
 }
 
 .nav{
@@ -60,20 +68,14 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;    
 }
 .lien{
     text-align: center;
     border-top: solid 1px transparent;
     padding-top: 40px;
     padding-left: 40px;
-    padding-right: 40px;
-    
-}
-.lien a{
-    text-decoration: none;
-    color: black;
+    padding-right: 40px;    
 }
 
 .lien:hover{
@@ -90,8 +92,6 @@ body {
     margin-top: 5px;
 }
 
-
-
 /*définit le style du bouton submit*/
 .boutton_recherche input[type="submit"]{
     color: white;
@@ -106,14 +106,15 @@ body {
 }
 /* definit le style de la zone de texte ou on rentre la recherche */
 .search input[type="search"]{
-   line-height: 48px;
+   
    width: 270px;
-   border-style: none;
+   border-top: solid 1px var(--light-grey-color);
+   border-bottom: solid 1px var(--light-grey-color);
+   border-left-style: none;
+   border-right-style: none;
+   line-height: 44px;
    padding-left: 20px;
-   font-size: large;
-   border: solid var(--light-grey-color) 10px;
-   border-style: none;
-    
+     
 }
 /*définit le style du placeholder*/
 ::placeholder{
@@ -132,6 +133,7 @@ body {
     background-color: var(--light-grey-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    
 }
 
 /* definit le style du logo loupe de FontAwsome qui sert de submit en version mobile. Pour l'instant caché */
@@ -157,7 +159,7 @@ form{
     display: flex;
     height: 42px;
     align-items:center;
-    width:fit-content;     
+        
 }
 
 /* definit la disposition en mode flex vertical de toute la zone de recherche à savoir titre, sous titre puis barre de recherche */
@@ -165,6 +167,7 @@ form{
     display: flex;
     flex-direction: column;
 }
+
 
 /********************************************************* section filtre *******************************************/
 
@@ -180,19 +183,12 @@ form{
   align-items: center;
   padding: 0 30px;
   height: 50px;
-  width: fit-content;
   gap: 10px;
   font-size: 17px;
   font-weight: 700;
   border: solid 1px var(--light-grey-color); 
   border-radius: 25px;
   
-}
-
-/*définit le style des logo FonAwsome dans les élements de filtre*/
-.element_filtre i{
-    color: var(--main-color);
-    
 }
 
 /* definit le style lors du hover des élements de filtre */
@@ -227,15 +223,8 @@ form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.info i{
-    color: var(--main-color);
-}
-.info p{
-    font-size: 16px;
 }
 
 /***************************** Section hébergement ******************************************/
@@ -268,12 +257,12 @@ form{
 }
 
 /* defini le style du lien afficher_plus*/
-.afficher_plus a{
+.afficher_plus{
     font-size: 18px;
     font-weight: 700; 
-    text-decoration: none;
-    color: black;   
+    padding-bottom: 30px;   
 }
+
 
 /* definit le style des cards présents dans la div. les border radius, les ombres et l'alignement images /textes  */
 .card{
@@ -300,10 +289,7 @@ form{
 }
 
 /* defini le style des etoiles de chez FontAwsome */
-.nom_prix_note i{
-    color: var(--main-color);
-    font-size: smaller;       
-}
+
 /*definit le style du titre dans les cards*/ 
 .nom_hotel{
     font-size: 16px;
@@ -340,13 +326,14 @@ form{
     width: 100%;
 }
 
-/*retire les effets de style (soulignement, couleur violette des liens) sur nos cards qui sont des liens*/
-.container_cards_gauche a{
-    text-decoration: none;
-    color: black;
-}
 
 /***********************************Les plus populaires**************************/
+.titre_populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /****container général de la grande div de droite*/
 .container_populaires_droite{
@@ -410,16 +397,6 @@ form{
     padding-bottom: 8px;
 }
 
-/* definit le style des etoiles de chez FontAwsome dans les cards de droite*/
-.nom_prix_note_2 i{
-    color: var(--main-color);
-}
-
-/*supprime les style souligné et couleur violette des liens */
-.container_cards_droite a{
-    text-decoration: none;
-    color: black;
-}
 
 /*definit la propriété flex de la grand section qui comprends le container gauche et droite*/
 .hebergement{
@@ -468,11 +445,6 @@ form{
     margin-bottom: 61px;
 }
 
-.container_activites a{
-    text-decoration: none;
-    color: black;
-}
-
 
 
 /************************footer***********************************/
@@ -482,13 +454,7 @@ form{
     align-items:flex-start;
     height: 225px;
     width: 100%;
-    background-color: var(--light-grey-color);
-    
-    
-}
-.liste_footer{
-    width: fit-content;
-    
+    background-color: var(--light-grey-color);    
 }
 
 .liste_footer h1{
@@ -497,12 +463,6 @@ form{
 .liste_footer ul li{
     list-style: none;
     padding: 0px 0px 12px 0px;
-
-}
-
-.liste_footer a{
-    text-decoration: none;
-    color: black;
 }
 
 /*****************************************media querie tablette****************************/
@@ -614,9 +574,9 @@ form{
         .container{ 
             background-color: white;
             max-width: 768px;
-            padding-left: 19px;
-            padding-right: 19px;
             margin: auto;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 /*************header *************/
         .nav{
@@ -679,12 +639,20 @@ form{
  /******************** hebergement ***************************/
         .hebergement{
             flex-direction: column-reverse;
+            gap: 0px;
+            
         } 
-        
+        .container_populaires_droite{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 0px;
+            border-radius: 0px;
+        }
         .container_cards_droite{
             flex-direction: column;
-        
+            justify-content: space-around;
             height: 580px;
+            padding-bottom: 20px;
         }
         .card_2{
             width: 100%;
@@ -704,8 +672,11 @@ form{
         }
 
         .container_hebergement_gauche{
-            height: 100%;
             background-color: transparent;
+            height: 100%;
+            padding-top: 26px;
+            padding-left: 20px;
+            padding-right: 20px;
            
         }
 
@@ -718,10 +689,14 @@ form{
         }
 
         /****************activité marseille **************************/
+        .activites_a_marseille{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         .container_activites{
             flex-direction: column;
-            gap: 60px;
+            gap: 60px;    
         }
         .card_activite{
             width: 100%;
