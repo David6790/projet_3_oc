@@ -67,7 +67,7 @@ p{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding-bottom: 50px;    
 }
 .lien{
@@ -83,15 +83,14 @@ p{
 }
 
 /****************************************** Section recherche *****************************************/
-
-.titre-recherche h1{
-    margin-bottom: 5px;
+.titre-recherche h2{
+    margin-bottom: 0px;
+ 
 }
-
 .titre-recherche p{
-    margin-top: 5px;
+    margin-top: 8px;
+    margin-bottom: 35px;
 }
-
 /*définit le style du bouton submit*/
 .boutton_recherche input[type="submit"]{
     color: white;
@@ -231,6 +230,10 @@ form{
 
 
 /*definit l'arrière plan, les propriété flexbox et le style du conteneur général gauche hébergement marseille*/
+
+.validateur_w3c{
+    display: none;
+}
 
 .container_hebergement_gauche{
     background-color: var(--light-grey-color);

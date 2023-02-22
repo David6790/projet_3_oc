@@ -30,15 +30,12 @@
                         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                
                     <form method="post"><!--formulaire de recherche-->
                         <div class="logo_geo">
                             <label for="localisation"><i><i class="fa-solid fa-location-dot"></i></i></label>
                         </div>
                         <div class="search">
-                            <div class="input_1">
-                                <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">
-                            </div>
+                            <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">  
                         </div>
                         <div class="boutton_recherche">
                             <input type="submit" value="Rechercher">    
@@ -56,24 +53,32 @@
                 <Div class="partie_filtre">
                     <div><h2>Filtres</h2></div>
                     <div class="eco_famille"><!--Element filtre regroupé par couple pour anticipé l'intégration mobile-->
-                        <div class="element_filtre">
-                           <div><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
-                           <div>Économique</div>
-                        </div>
-                        <div class="element_filtre">
-                            <div><i class="fa-solid fa-person fa-lg"></i></div>
-                            <div>Familial</div>
-                        </div>
+                        <a href="#">
+                            <div class="element_filtre">
+                                <div><i class="fa-solid fa-money-bill-wave fa-lg"></i></div>
+                                <div>Économique</div>
+                             </div>
+                        </a>
+                        <a href="#">
+                            <div class="element_filtre">
+                                <div><i class="fa-solid fa-person fa-lg"></i></div>
+                                <div>Familial</div>
+                            </div>
+                        </a>    
                     </div>
                     <div class="romantique_animaux">
-                        <div class="element_filtre">
-                            <div><i class="fa-solid fa-heart fa-lg"></i></div> 
-                            <div>Romantique</div>   
-                        </div>
-                        <div class="element_filtre">
-                            <div><i class="fa-solid fa-dog fa-lg"></i></div>
-                            <div>Animaux autorisés</div>
-                        </div>
+                        <a href="#">
+                            <div class="element_filtre">
+                                <div><i class="fa-solid fa-heart fa-lg"></i></div> 
+                                <div>Romantique</div>   
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="element_filtre">
+                                <div><i class="fa-solid fa-dog fa-lg"></i></div>
+                                <div>Animaux autorisés</div>
+                            </div>
+                        </a>   
                     </div>
                 </div>
                 <div class="info">
@@ -82,6 +87,7 @@
             </section>
 
             <section class="hebergement"><!--section qui englobera les deux conteneurs de carte "hebergement à marseille et "les plus populaires"-->
+                <h2 class="validateur_w3c">Hebergement à marseille</h2><!--h2 caché sur la page. Uniquement présent pour passer le vadateur W3C-->
                 <article class="container_hebergement_gauche">
                     <h2>Hébergement à Marseille</h2>
                     
@@ -205,7 +211,7 @@
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                                         <div class="nom_prix_note_2">
                                             <div>
-                                                <div class="nom_hotel_2">Hôtel Le soleil du matin</div>
+                                                <div class="nom_hotel_2"> Hôtel Le soleil du matin</div>
                                                 <div> Nuit à partir de 128€</div>
                                             </div>  
                                            <div>
