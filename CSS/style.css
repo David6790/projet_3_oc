@@ -185,13 +185,17 @@ form{
   gap: 10px;
   font-size: 17px;
   font-weight: 700;
-  border: solid 1px var(--light-grey-color); 
-  border-radius: 25px;
   
+  
+}
+.partie_filtre a{
+    border: solid 1px var(--light-grey-color); 
+    border-radius: 25px;
+    
 }
 
 /* definit le style lors du hover des élements de filtre */
-.element_filtre:hover{
+.partie_filtre a:hover{
 
     background-color: var(--second-color);
 }
@@ -614,30 +618,41 @@ form{
         }
         
 /******************************barre de recherche***************************/
+        .recherche{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .titre-recherche{
             width: 100%;
             
         }
 
 /********filtres********/
-
+        .filtre{
+            padding-left: 20px;
+            padding-right: 20px; 
+        }
         .partie_filtre{
             flex-direction: column;
             align-items: flex-start;
-            width: 100%;
+            width: 100%;  
         }
 
-        .eco_famille{  
+        .eco_famille {  
          width: 100%;
+         
         }
-        .romantique_animaux{
+        .romantique_animaux {
             width: 100%;
         }
 
-        .element_filtre{
+        .partie_filtre a {
             justify-content: flex-start;
             width: 50%;
-        
+        }
+        .element_filtre{
+            justify-content: flex-start;
+            font-size: 11px;
         }
  /******************** hebergement ***************************/
         .hebergement{
