@@ -27,7 +27,6 @@ p{
 
 /* definir la largeur maximale de la page, la couleur de fond et centrer la page dans le navigateur et rajouter un padding gauche et droite de 40px*/
 .container{ 
-    background-color: transparent;
     max-width: 1400px;
     padding-left: 40px;
     padding-right: 40px;
