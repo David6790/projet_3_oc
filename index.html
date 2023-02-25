@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.9">
         <title>Booki | Acceuil </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,9 @@
                             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                             <p>En plein centre-ville ou en pleine nature</p>
                     </div>
-                        <form method="post"><!--formulaire de recherche-->
+                        <form method="post" class="formulaire"><!--formulaire de recherche-->
                             <div class="logo_geo">
-                                <label for="localisation"><i class="fa-solid fa-location-dot"></i></label>
+                                <label for="localisation"><div><i class="fa-solid fa-location-dot"></i></div></label>
                             </div>
                             <div class="search">
                                 <input type="search" name="localisation" id="localisation" placeholder="Marseille, France">  
@@ -80,7 +80,12 @@
                         </div>
                     </div>
                     <div class="info">
-                        <p><i class="fa-solid fa-circle-info"></i>&emsp; Plus de 500 logements sont disponibles dans cette ville</p>
+                        <div>
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div>
+                            <p> Plus de 500 logements sont disponibles dans cette ville</p>
+                        </div> 
                     </div>      
                 </section>
     
