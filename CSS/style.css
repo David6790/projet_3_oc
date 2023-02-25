@@ -140,8 +140,6 @@ p{
 /* definit le style du logo loupe de FontAwsome qui sert de submit en version mobile. Pour l'instant caché */
 .loupe{
     background-color: var(--main-color);
-    color: black;
-    font-size: large;
     height: 49px;
     width: 50px;
     border-top-right-radius: 10px;
@@ -168,7 +166,6 @@ form{
     display: flex;
     flex-direction: column;
 }
-
 
 /********************************************************* section filtre *******************************************/
 
@@ -477,10 +474,13 @@ form{
 /*****************************************media querie tablette****************************/
 
 @media screen and (max-width: 992px) {
-   
-  
+    body {
+        display: flex;
+        margin: auto;
+    }  
     .container{    
-        max-width: 992px;    
+        max-width: 992px;
+        margin: auto;    
     }
     .element_filtre{
         padding: 0 20px;
@@ -564,8 +564,7 @@ form{
         body {
             display: block;
             margin: auto;
-        }
-        
+        }        
         .container{ 
             max-width: 767px;
             margin: auto;
@@ -650,7 +649,7 @@ form{
         }
         .element_filtre{
             justify-content: flex-start;
-            font-size: 14px;   
+            font-size: 11px;   
         }
         .info{
             align-items: baseline;
