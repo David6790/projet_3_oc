@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Booki | Acceuil </title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,7 +91,7 @@
                 <section class="hebergement"><!--section qui englobera les deux conteneurs de carte "hebergement à marseille et "les plus populaires"-->
                     <div class="container_hebergement_gauche">
                         <h2>Hébergement à Marseille</h2>
-                        <div class="container_cards_gauche"><!--div qui contiendra les div ligne 1 et ligne 2 pour coder en flex column-->
+                        <div class="container_ligne_1_2">
                             <div class="ligne_1"><!--div qui englobe les 3 cards de la premiere ligne qu'on codera en flex row-->
                                 <a href="#" target="_blank"><!--balise a pour rendre la carte cliquable dans son intégralité-->
                                     <article class="card">
@@ -195,15 +195,18 @@
                                     </article>
                                 </a>
                             </div>
-                        </div>
+                        </div>                        
                         <div class="afficher_plus"><a href="#">Afficher plus</a> </div>
                     </div>
     
                     <article class="container_populaires_droite">
                         <div class="titre_populaire">
-                            <div><h2>Les plus populaires</h2></div>
-                            <div><i class="fa-solid fa-chart-line"></i></div>
-    
+                            <div>
+                                <h2>Les plus populaires</h2>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>        
                         </div>
                         <div class="container_cards_droite"><!--container des 3 cards de la partie droite-->
                             <a href="#">
@@ -272,7 +275,7 @@
                                 <div class="nom_activite"><h4>Le vieux port</h4></div>
                             </article>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <article class="card_activite">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                                 <div class="nom_activite"><h4>Fort de Pomègues</h4></div>

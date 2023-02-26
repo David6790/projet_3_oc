@@ -9,6 +9,14 @@ body {
 	display: flex;
 	justify-content: center;
     margin: 0px;
+    
+}
+.container{ 
+    max-width: 1400px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;   
 }
 /*defini la couleur de tout les icones FontAwsome*/
 i{
@@ -24,15 +32,6 @@ p{
     font-size: 16px;
 }
 
-
-/* definir la largeur maximale de la page, la couleur de fond et centrer la page dans le navigateur et rajouter un padding gauche et droite de 40px*/
-.container{ 
-    max-width: 1400px;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: auto;   
-}
 
 /* De manière générale implementer cette police dans la page*/
 *{
@@ -223,7 +222,7 @@ form{
 
 /********************************************** Section hébergement *******************************************************/
 
-/*container qui engliobe tout les élements de hébergement à marseille. le container de card, les titre et les liens afficher plus*/
+/*container qui englobe tout les élements de hébergement à marseille. le container de card, les titre et les liens afficher plus*/
 .container_hebergement_gauche{
     background-color: var(--light-grey-color);
     height: 626px;
@@ -236,9 +235,27 @@ form{
     justify-content: space-around;
     
 }
+.container_ligne_1_2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+}
+/* defini les propriété flexbox de la ligne 1 */
+.ligne_1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+/*defini les propriété flexbox de la ligne 2*/
+.ligne_2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 /* definit le style des cards présents dans la div. les border radius, les ombres et l'alignement images /textes  */
-.card{
-    width: 246px;
+.ligne_1 a, .ligne_2 a{
+    width: 30%;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;    
@@ -255,42 +272,14 @@ form{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     border: solid 5px white;
-    box-sizing: border-box;
-        
+    box-sizing: border-box;       
 }
-/* defini les propriété flexbox de la ligne 1 */
-.ligne_1{
-    display: flex;
-    justify-content:space-between;
-    width: 100%;    
-}
-
-/*defini les propriété flexbox de la ligne 2*/
-.ligne_2{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-/* defini le conteneur contenant les deux lignes de cards*/
-.container_cards_gauche{
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;     
-}
-
-
 /* defini le style du lien afficher_plus*/
 .afficher_plus{
     font-size: 18px;
     font-weight: 700; 
     padding-bottom: 30px;   
 }
-
-
 /*definit le style du titre dans les cards*/ 
 .nom_hotel h4{
     margin-top: 0px;
@@ -315,13 +304,14 @@ form{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 /****container général de la grande div de droite*/
 .container_populaires_droite{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(--light-grey-color);
     height: 626px;
     width: 32%;
@@ -337,10 +327,9 @@ form{
    width: 100%;
    height: 100%;   
 }
-
 /*cdefinit le style des cards de droite*/
 .card_2{
-    width: 346px;
+    width: 100%;
     height: 144px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
@@ -350,20 +339,16 @@ form{
     background-color: white;
     box-sizing: border-box;
     padding-right: 30px;
-
-    
-
 }
 /*definit le style de l'image dans les cards de droite*/
 .card_2 img{
-    width: 137px;
+    width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     border: solid 5px white;  
     box-sizing: border-box;
 }
-
 /*definit le le style des texte dans les cards*/
 .nom_prix_note_2{
     display: flex;
@@ -377,10 +362,9 @@ form{
 /*definit le style des titre dans les cards de droite*/
 .nom_hotel_2 h4{
     margin-top: 8px;
-    margin-bottom: 7px;  
+    margin-bottom: 7px;
+    font-size: 16px;  
 }
-
-
 /*definit la propriété flex de la grand section qui comprends le container gauche et droite*/
 .hebergement{
     display: flex;
@@ -388,38 +372,9 @@ form{
     margin-bottom: 50px;
 }
 
-/******************************* section activité à marseille ***************************/
-
-/*definit le style des cards dans la section activité à marseille */
-.card_activite{
-    width: 302px;
-    height: 445px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: white;
-    box-sizing: border-box;
-}
-
-/*definit le style des images contenu dans les cards activités à marseille*/
-.card_activite img{
+/***************************************************** section activité à marseille ***************************************/
+.activites_a_marseille{
     width: 100%;
-    height: 88%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;   
-    
-}
-/*definit le style des description dans les cards activités*/
-.nom_activite{
-    height: 12%;        
-}
-
-.nom_activite h4{
-    padding-left: 19px;
-    margin-top: 15px;
 }
 /*definit la propriété flex du container de toutes les cards activités à marseille*/
 .container_activites{
@@ -431,9 +386,33 @@ form{
     margin-bottom: 61px;
 }
 
+/*definit le style des cards dans la section activité à marseille */
+.container_activites a{
+    width: 23%;
+    height: 444px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
 
+/*definit le style des images contenu dans les cards activités à marseille*/
+.container_activites a img{
+    height: 389px;
+    width: 100%;
+    object-fit:cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;      
+}
+.nom_activite h4{
+    padding-left: 19px;
+    margin-top: 15px;
+}
 
-/************************footer***********************************/
+/**************************************************    footer     **************************************************/
 
 /*définit le container du footer*/
 .container_footer{
@@ -455,102 +434,111 @@ form{
     padding: 0px 0px 12px 0px;
 }
 
-/*****************************************media querie tablette****************************/
+/*****************************************      media querie tablette         **********************************/
 
 @media screen and (max-width: 992px) {
-    body {
-        display: flex;
-        margin: auto;
-    }  
+    
     .container{    
         max-width: 992px;
-        margin: auto;    
+        width: 100%;
+        margin: auto;
+           
     }
+
+    /************  partie filtre *******************/
+
     .element_filtre{
         padding: 0 20px;
-    }   
+        font-size: smaller;
+    }
+    /***********partie hébergement **********/   
+
+    /*definit la section hébergement avec la section "hebergement à marseille" et la section "les plus populaires en flex colonne*/
     .hebergement{
         flex-direction: column;
         justify-content: space-between;
         gap: 53px;
         margin-bottom: 70px;
     }
+    /* demander au container de hébergement à marseille de prendre toute la largeur de l'ecran*/
+    .container_hebergement_gauche{
+        width: 100%;    
+    }
 
+    /*definit le contenu du container "les plus populaires en mode flex row*/
     .container_cards_droite{
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
         width: 100%;
-        height: 100%;   
+        height: 100%;         
      }
+   
     .container_populaires_droite{
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
-    }
-    .container_hebergement_gauche{
-        width: 100%;
         
     }
-
-    .ligne_1{
-        justify-content: space-between;
-
+    .container_cards_droite a{
+        width: 33%;
+        height: 100%;
     }
-    .ligne_2{
-        justify-content: space-between;
-    }
-
     .card_2{
-        width: 252px;
-        height: 154px;
-        padding-right: 4px;
-        
+        width: 100%;
+        padding-right: 5px;
     }
+   
     .card_2 img{
-        width: 106px;
-        height: 100%;
+        width: 50%;
+        height: 144px;
         padding-right: 5px;
     }
     .nom_prix_note_2{
-        font-size: 14px;
+        font-size: 11px;
         padding-top: 9px;
         padding-left: 0px;
     }
+    .nom_prix_note_2 h4{
+        font-size: 13px;
+    }
 
+    /*************Section activité **************/
+    .container_activites a{
+        width: 22%;
+        height: 260px;
+    }
     
-    .card_activite{
-        width: 182px;
-        height: 267px;
-        
-    }
-    .card_activite img{
-        height: 211px;
-        width: 100%;
-    }
     .container_activites{
         flex-direction: row;
         justify-content: space-around;
         gap: 10px;
         
     }
+    .container_activites a img{
+        height: 200px;
+        width: 100%;     
+    }
+    .nom_activite h4{
+        margin-top: 9px;
+        padding-right: 5px;
+    }
+
+    /*footer*/
+    
     .container_footer{
         width: 100%;
-
-        gap: 50px;
+        gap: 20px;
     }
 
     }
-
     /*****************************************media querie smartphone****************************/
 
-    @media screen and (max-width: 767px){
-        body {
-            display: block;
-            margin: auto;
-        }        
+    @media screen and (max-width: 768px){
+        
+      
         .container{ 
-            max-width: 767px;
+            max-width: 768px;
             margin: auto;
             padding-left: 0px;
             padding-right: 0px;
@@ -561,6 +549,7 @@ form{
             align-items: center;
             padding-bottom: 0px;
             
+            
         }
         .logo{
             width: 100%;
@@ -570,7 +559,6 @@ form{
         .menu{
             width: 100%;
             justify-content: space-evenly;
-            
             gap: 0px;
         }
         .lien{
@@ -583,14 +571,17 @@ form{
         }
 
         .lien:hover{
-            border-bottom: solid 1px var(--main-color);
+            border-bottom: solid 3px var(--main-color);
             border-top: none;
         }
         
 /******************************barre de recherche***************************/
+
         .recherche{
             padding-left: 20px;
             padding-right: 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .titre-recherche{
             width: 100%;
@@ -611,7 +602,9 @@ form{
 /********filtres********/
         .filtre{
             padding-left: 20px;
-            padding-right: 20px; 
+            padding-right: 20px;
+            box-sizing: border-box;
+            
         }
         .partie_filtre{
             flex-direction: column;
@@ -639,32 +632,52 @@ form{
             align-items: baseline;
         }
  /******************** hebergement ***************************/
+
+ /*definit la disposition flex column reverse de la grande section hebergement*/
         .hebergement{
             flex-direction: column-reverse;
-            gap: 0px;
-            
+            gap: 0px;     
         } 
+
+ /*definit d'abord le container "les plus populaires*/       
         .container_populaires_droite{
-            padding-left: 20px;
-            padding-right: 20px;
             padding-bottom: 0px;
             border-radius: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
         }
         .container_cards_droite{
             flex-direction: column;
             justify-content: space-around;
-            height: 580px;
+            align-items: flex-start;
+            height: 100%;
             padding-bottom: 20px;
         }
-        .card_2{
+
+        .container_cards_droite a{
             width: 100%;
-            
         }
 
         .card_2 img{
-            width: 30%;
+            width: 45%;
         }
 
+/* definit ensuite le container hébergement à marseille*/
+
+        .container_hebergement_gauche{
+            background-color: transparent;
+            height: 100%;
+            padding-top: 26px;
+            gap: 26px;
+            padding-left: 20px;
+            padding-right: 20px;
+           
+        }
+
+        .container_cards_gauche{
+            gap: 20px;
+        }
         .ligne_1{
             flex-direction: column;
             gap: 20px;
@@ -674,41 +687,34 @@ form{
             gap: 20px;
         }
 
-        .container_hebergement_gauche{
-            background-color: transparent;
-            height: 100%;
-            padding-top: 26px;
-            padding-left: 20px;
-            padding-right: 20px;
-           
-        }
-
-        .container_cards_gauche{
-            gap: 20px;
-        }
-
-        .card{
+        .ligne_1 a, .ligne_2 a{
             width: 100%;
         }
-
         /****************activité marseille **************************/
+       
         .activites_a_marseille{
             padding-left: 20px;
-            padding-right: 20px;
+            padding-right: 20px; 
+            box-sizing: border-box; 
         }
-
         .container_activites{
             flex-direction: column;
-            gap: 60px;    
+            gap: 24px; 
+            
+            
+              
         }
-        .card_activite{
+        .container_activites a{
             width: 100%;
         }
+        
 
         /**************** footer ********************/
 
         .container_footer{
             flex-direction: column;
+            justify-content: flex-start;
+            
             height: 100%;
         }
 
