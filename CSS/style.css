@@ -7,7 +7,7 @@
 }
 body {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
     margin: 0px;
 }
 /*defini la couleur de tout les icones FontAwsome*/
@@ -28,6 +28,7 @@ p{
 /* definir la largeur maximale de la page, la couleur de fond et centrer la page dans le navigateur et rajouter un padding gauche et droite de 40px*/
 .container{ 
     max-width: 1400px;
+    width: 100%;
     padding-left: 40px;
     padding-right: 40px;
     margin: auto;   
@@ -67,7 +68,8 @@ p{
     width: 100%;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 50px;    
+    padding-bottom: 50px; 
+    
 }
 .lien{
     text-align: center;
@@ -93,36 +95,6 @@ p{
     margin-top: 8px;
     margin-bottom: 35px;
 }
-/*définit le style du bouton submit*/
-.boutton_recherche input[type="submit"]{
-    color: white;
-    font-size: large;
-    background-color: var(--main-color);
-    height: 49px;
-    width: 140px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-style: none;
-    
-}
-/* definit le style de la zone de texte ou on rentre la recherche */
-.search input[type="search"]{
-   
-   width: 270px;
-   border-top: solid 1px var(--light-grey-color);
-   border-bottom: solid 1px var(--light-grey-color);
-   border-left-style: none;
-   border-right-style: none;
-   line-height: 44px;
-   padding-left: 20px;
-     
-}
-/*définit le style du placeholder*/
-::placeholder{
-    font-size: large;
-    color: black;
-}
-
 /* definit le style du logo FontAwsome qui sert de label au formulaire */
 .logo_geo{
     display: flex;
@@ -136,7 +108,46 @@ p{
     border-bottom-left-radius: 10px;
     
 }
+/* definit le style de la zone de texte ou on rentre la recherche */
+.search input[type="search"]{
+   
+    width: 270px;
+    border-top: solid 1px var(--light-grey-color);
+    border-bottom: solid 1px var(--light-grey-color);
+    border-left-style: none;
+    border-right-style: none;
+    line-height: 44px;
+    padding-left: 20px;
+      
+ }
+/*définit le style du bouton submit*/
+.boutton_recherche input[type="submit"]{
+    color: white;
+    font-size: large;
+    background-color: var(--main-color);
+    height: 49px;
+    width: 140px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: none;   
+}
 
+/*définit le style du placeholder*/
+::placeholder{
+    font-size: large;
+    color: black;
+}
+/* permet d'enlever la bordure extérieure du input search lorsqu'on clique dessus */
+.search input:focus{
+    outline: none;
+ }
+ 
+/* definit la disposition en mode flex horizontal du formulaire  */
+form{
+    display: flex;
+    height: 42px;
+    align-items:center;      
+}
 /* definit le style du logo loupe de FontAwsome qui sert de submit en version mobile. Pour l'instant caché */
 .loupe{
     background-color: var(--main-color);
@@ -147,24 +158,11 @@ p{
     border-style: none;
     display: none;
 }
-
-/* permet d'enlever la bordure extérieure du input search lorsqu'on clique dessus */
-.search input:focus{
-   outline: none;
-}
-
-/* definit la disposition en mode flex horizontal du formulaire  */
-form{
-    display: flex;
-    height: 42px;
-    align-items:center;
-        
-}
-
 /* definit la disposition en mode flex vertical de toute la zone de recherche à savoir titre, sous titre puis barre de recherche */
 .recherche{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /********************************************************* section filtre *******************************************/
@@ -181,35 +179,25 @@ form{
   height: 50px;
   gap: 10px;
   font-size: 17px;
-  font-weight: 700;
-  
-  
+  font-weight: 700; 
+  border: solid 1px var(--light-grey-color); 
+  border-radius: 25px;
 }
-/*definit la bordure fine et grise de tout les elements du filtre*/
-.partie_filtre a{
-    border: solid 1px var(--light-grey-color); 
-    border-radius: 25px;
-    
-}
-
-/* definit le style lors du hover des élements de filtre */
-.partie_filtre a:hover{
-
-    background-color: var(--second-color);
-}
-
 /* definit propriété flex par couple d'élément pour anticiper l'intégration mobile */
 .eco_famille{
     display: flex;
-    gap: 20px;
-       
+    gap: 20px;       
 }
 /* definit propriété flex par couple d'élément pour anticiper l'intégration mobile */
 .romantique_animaux{
     display: flex;
-    gap: 20px;
-    
+    gap: 20px;    
 }
+/* definit le style lors du hover des élements de filtre */
+.element_filtre:hover{
+   background-color: var(--second-color);
+}
+
 /* definit la propriété flex du conteneur qui contient les deux coupples d'element filtre*/
 .partie_filtre{
     display: flex;
@@ -217,8 +205,6 @@ form{
     align-items: center;
     gap: 20px;
 }
-
-
 /* definit disposition flex de toute la section filtre */
 .filtre{
     display: flex;
@@ -226,18 +212,16 @@ form{
     gap: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 100%;
 }
-
 .info{
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    gap: 10px;
-    
+    gap: 10px;    
 }
 
-
-/***************************** Section hébergement ******************************************/
+/********************************************** Section hébergement *******************************************************/
 
 /*container qui engliobe tout les élements de hébergement à marseille. le container de card, les titre et les liens afficher plus*/
 .container_hebergement_gauche{
